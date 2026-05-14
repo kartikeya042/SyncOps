@@ -2,18 +2,18 @@
 
 A comprehensive, full-stack alert management platform designed for enterprise operations. SyncOps ingests driver and compliance alerts, applies a configurable rule engine to escalate or auto-close them, and surfaces everything on a real-time analytics dashboard.
 
-<!-- ---
+---
 
 ## 🚀 Live Deployment
 
 | | |
 |---|---|
 | **Dashboard (Vercel)** | https://syncops-dashboard.vercel.app/ |
-| **Backend API (Render)** | https://syncops-api.onrender.com |
+| **Backend API (Render)** | https://syncops-api-3nfi.onrender.com |
 
 > **Note:** The backend is hosted on Render's free tier. The first request after inactivity may take up to **45 seconds** to wake the server. Subsequent requests are fast.
 
---- -->
+---
 
 ## 🔑 Test Credentials
 
@@ -191,7 +191,7 @@ CORS_ORIGIN    = https://syncops-dashboard.vercel.app
 
 **Vercel (frontend):**
 ```
-VITE_API_URL   = https://syncops-api.onrender.com
+VITE_API_URL   = https://syncops-api-3nfi.onrender.com
 ```
 
 ---
@@ -215,7 +215,7 @@ VITE_API_URL   = https://syncops-api.onrender.com
 
 **cURL**
 ```bash
-curl -X POST https://syncops-api.onrender.com/api/alerts \
+curl -X POST https://syncops-api-3nfi.onrender.com/api/alerts \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer <your-token>" \
   -d '{
@@ -231,7 +231,7 @@ curl -X POST https://syncops-api.onrender.com/api/alerts \
 
 1. Set method to **POST** and enter the URL:
    ```
-   https://syncops-api.onrender.com/api/alerts
+   https://syncops-api-3nfi.onrender.com/api/alerts
    ```
 
 2. Under the **Headers** tab, add:
