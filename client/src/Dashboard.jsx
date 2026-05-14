@@ -41,7 +41,7 @@ function LoginScreen({ form, setForm, error, onSubmit }) {
   return (
     <div className="min-h-screen bg-gray-950 flex items-center justify-center">
       <div className="bg-gray-900 rounded-2xl p-8 w-full max-w-sm shadow-2xl border border-gray-800">
-        <h1 className="text-white text-xl font-semibold mb-6">moveinsync dashboard</h1>
+        <h1 className="text-white text-xl font-semibold mb-6">syncops dashboard</h1>
         <form onSubmit={onSubmit} className="flex flex-col gap-4">
           <input
             className="bg-gray-800 text-white rounded-lg px-4 py-2 text-sm border border-gray-700 focus:outline-none focus:border-indigo-500"
@@ -446,7 +446,7 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen bg-gray-950 text-gray-100">
       <header className="border-b border-gray-800 px-6 py-4 flex items-center justify-between sticky top-0 bg-gray-950 z-10">
-        <h1 className="text-base font-semibold tracking-tight">moveinsync — alert dashboard</h1>
+        <h1 className="text-base font-semibold tracking-tight">syncops — alert dashboard</h1>
         <div className="flex items-center gap-4">
           {loading && <span className="text-xs text-gray-500 animate-pulse">refreshing...</span>}
           <button onClick={() => fetchDashboard(token)} className="text-xs text-gray-400 hover:text-white transition-colors">refresh</button>

@@ -1,19 +1,19 @@
 # Intelligent Alert Escalation & Resolution System
 
-A full-stack alert management platform built as a 48-hour take-home case study for MoveInSync. The system ingests driver and compliance alerts, applies a configurable rule engine to escalate or auto-close them, and surfaces everything on a real-time analytics dashboard.
+A comprehensive, full-stack alert management platform designed for enterprise operations. SyncOps ingests driver and compliance alerts, applies a configurable rule engine to escalate or auto-close them, and surfaces everything on a real-time analytics dashboard.
 
----
+<!-- ---
 
 ## 🚀 Live Deployment
 
 | | |
 |---|---|
-| **Dashboard (Vercel)** | https://move-in-sync-case-study.vercel.app/ |
-| **Backend API (Render)** | https://moveinsync-case-study-yx05.onrender.com |
+| **Dashboard (Vercel)** | https://syncops-dashboard.vercel.app/ |
+| **Backend API (Render)** | https://syncops-api.onrender.com |
 
 > **Note:** The backend is hosted on Render's free tier. The first request after inactivity may take up to **45 seconds** to wake the server. Subsequent requests are fast.
 
----
+--- -->
 
 ## 🔑 Test Credentials
 
@@ -137,8 +137,8 @@ Tokens are signed with `jsonwebtoken`, expire after 8 hours (matching a typical 
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/kartikeya042/MoveInSync-Case-Study
-cd MoveInSync
+git clone https://github.com/kartikeya042/SyncOps
+cd SyncOps
 
 # backend dependencies
 npm install
@@ -186,12 +186,12 @@ The dashboard will be available at `http://localhost:5173`. The Vite dev proxy f
 PORT           = (set automatically by render)
 MONGO_URI      = mongodb+srv://...
 JWT_SECRET     = <64-char secret>
-CORS_ORIGIN    = https://your-project.vercel.app
+CORS_ORIGIN    = https://syncops-dashboard.vercel.app
 ```
 
 **Vercel (frontend):**
 ```
-VITE_API_URL   = https://moveinsync-case-study-yx05.onrender.com
+VITE_API_URL   = https://syncops-api.onrender.com
 ```
 
 ---
@@ -215,7 +215,7 @@ VITE_API_URL   = https://moveinsync-case-study-yx05.onrender.com
 
 **cURL**
 ```bash
-curl -X POST https://moveinsync-case-study-yx05.onrender.com/api/alerts \
+curl -X POST https://syncops-api.onrender.com/api/alerts \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer <your-token>" \
   -d '{
@@ -231,7 +231,7 @@ curl -X POST https://moveinsync-case-study-yx05.onrender.com/api/alerts \
 
 1. Set method to **POST** and enter the URL:
    ```
-   https://moveinsync-case-study-yx05.onrender.com/api/alerts
+   https://syncops-api.onrender.com/api/alerts
    ```
 
 2. Under the **Headers** tab, add:

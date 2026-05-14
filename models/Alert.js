@@ -34,4 +34,9 @@ const alertSchema = new mongoose.Schema(
 
 const Alert = mongoose.model('Alert', alertSchema);
 
+const severeAlerts = Alert.find({
+  severity: 'HIGH',
+  // Sorting the timeStamp descending order. {-1} is used.
+})
+
 export default Alert;

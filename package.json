@@ -1,4 +1,6 @@
 {
+  "name": "syncops",
+  "description": "SyncOps — enterprise-grade intelligent alert escalation and resolution platform (backend API).",
   "type": "module",
   "scripts": {
     "start": "node server.js"
